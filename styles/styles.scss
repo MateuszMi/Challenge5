@@ -1,6 +1,14 @@
+@import 'navbar';
+@import 'home';
+@import 'service';
+@import "work";
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-family: 'Kumbh Sans', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
 }

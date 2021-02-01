@@ -1,0 +1,107 @@
+.service {
+    background-color: #475A85;
+    padding: 0.5rem calc((100vw - 1200px)/2);
+    display: flex;
+    flex-direction: column;
+    &__info {
+        text-align: center;
+        justify-content: center;
+        padding-left: 10px;
+        margin: 50px auto 50px auto;
+        border-bottom: 2px solid #fff;
+        padding: 15px;
+        &--title {
+            color: #fff;
+            text-shadow: 1px 1px grey;
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+        }
+        &--text {
+            color: #fff;
+            font-size: 1.5rem;
+        }
+        @include tablet {
+            &--title {
+                font-size: 2rem;
+            }
+            &--text {
+                font-size: 1rem;
+            }
+        }
+    }
+    &__item {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        text-align: center;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        width: 100;
+        @include tablet {
+            display: flex;
+            flex-direction: column;
+            width: 90%;
+            margin-left: 20px;
+        }
+        &--element {
+            width: 100%;
+            padding: 8%;
+        }
+        &--element i {
+            color: #fff;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        &--title {
+            color: #fff;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        &--text {
+            color: #fff;
+            margin-bottom: 30px;
+            text-align: justify;
+        }
+        &--button {
+            background-color: rgb(189, 70, 70);
+            color: #fff;
+            font-size: 1.2rem;
+            padding: 10px 35px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        &--button:hover {
+            background-color: rgb(170, 60, 20);
+            transition: 0.5s ease-in-out;
+            transform: scale(1.05);
+        }
+    }
+    &__info::after {
+        position: absolute;
+        content: "";
+        border-top: #fff 20px solid;
+        border-radius: 50%;
+        width: 20px;
+        margin-left: 170px;
+        margin-top: 5px;
+    }
+    &__info::before {
+        position: absolute;
+        content: "";
+        border-top: #fff 20px solid;
+        border-radius: 50%;
+        width: 20px;
+        margin-left: -180px;
+        margin-top: 119px;
+    }
+    @include tablet {
+        &__info::before {
+            margin-left: -120px;
+            margin-top: 82px;
+        }
+        &__info::after {
+            margin-left: 92px;
+            margin-top: 5px;
+        }
+    }
+}

@@ -1,0 +1,17 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: rgb(8, 8, 68);
+    &__copyrights {
+        color: #fff;
+        margin-top: 50px;
+    }
+    &__logo {
+        text-decoration: none;
+        color: #fff;
+        font-size: 1.5rem;
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+}

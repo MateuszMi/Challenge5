@@ -1,0 +1,21 @@
+$bg-color: hsl(256, 33, 10);
+$dot-color: rgb(0, 0, 0);
+$dot-size: 3px;
+$dot-space: 20px;
+.map__information {
+    padding: 0.5rem calc((100vw - 1200px)/2);
+    background: linear-gradient(90deg, $bg-color ($dot-space - $dot-size), transparent 1%) center, linear-gradient($bg-color ($dot-space - $dot-size), transparent 1%) center, $dot-color;
+    background-size: $dot-space $dot-space;
+    &--title {
+        font-size: 2.5rem;
+        color: #fff;
+        text-align: center;
+        margin-top: 150px;
+    }
+    &--info {
+        font-size: 1.2rem;
+        color: #fff;
+        text-align: center;
+        margin: 20px auto 150px auto;
+    }
+}

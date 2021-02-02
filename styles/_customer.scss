@@ -1,0 +1,50 @@
+.customer {
+    padding: 0.5rem calc((100vw - 1200px)/2);
+    margin-top: 50px;
+    &__title {
+        font-size: 2.3rem;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    &__info {
+        font-size: 1.2rem;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    &__element {
+        display: grid;
+        grid-template-columns: 2fr 1fr 5fr;
+        margin-bottom: 50px;
+        & i {
+            text-align: right;
+            margin-top: 20px;
+        }
+    }
+    @include tablet {
+        &__element {
+            display: flex;
+            flex-direction: column;
+            & i {
+                text-align: left;
+            }
+        }
+    }
+    &__item--first {
+        background-color: grey;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        margin: auto;
+    }
+    &__item--second {
+        margin: auto;
+    }
+    &__item--text {
+        line-height: 30px;
+        text-align: justify;
+        font-style: italic;
+    }
+    &__item--author {
+        margin-top: 20px;
+    }
+}

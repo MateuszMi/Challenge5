@@ -105,6 +105,11 @@
         cursor: pointer;
         padding: 15px 45px;
     }
+    &__button:hover {
+        background-color: rgb(170, 60, 20);
+        transition: 0.5s ease-in-out;
+        transform: scale(1.05);
+    }
 }
 
 .inputwrapper {

@@ -9,7 +9,7 @@ menu.addEventListener('click', function() {
 
 
 menuLinks.addEventListener('click', function(e) {
-    if (e.target.classList.contains('nnavbar__links')) {
+    if (e.target.classList.contains('navbar__links')) {
         menuLinks.classList.remove('active');
         menu.classList.remove("is-active");
     }

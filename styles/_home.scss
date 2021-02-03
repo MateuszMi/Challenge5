@@ -3,8 +3,6 @@
     @include tablet {
         background-position: 50% 50%;
         display: flex;
-        text-align: center;
-        align-items: center;
     }
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -56,8 +54,6 @@
     }
     @include tablet {
         &__elements {
-            align-items: center;
-            justify-content: center;
             text-align: center;
         }
         &__img {
@@ -65,13 +61,12 @@
             width: 0;
         }
         &__title {
-            margin-left: 10px;
             font-size: 2.2rem;
-            margin-top: 40px;
+            margin: 50px auto auto 40px;
         }
         &__info {
-            margin-left: 10px;
-            margin-top: 50px;
+            text-align: center;
+            margin: 50px auto auto 40px;
         }
         &__button {
             margin-bottom: 50px;

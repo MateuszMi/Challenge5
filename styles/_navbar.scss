@@ -13,6 +13,10 @@
     z-index: 9999;
     width: 100%;
     position: sticky;
+    top: 0;
+    @include tablet {
+        height: 55px;
+    }
     &__logo {
         color: #fff;
         text-decoration: none;
@@ -20,19 +24,17 @@
         font-size: 1.5rem;
         margin-left: 24px;
         @extend %align-center;
+        &__bold {
+            font-weight: bold
+        }
     }
     &__menu {
         @extend %align-center;
         @include tablet {
-            display: grid;
-            grid-template-columns: auto;
-            margin: 0;
-            width: 100%;
-            position: absolute;
-            opacity: 0;
-            height: 50vh;
-            z-index: -1;
+            display: none;
             &.active {
+                display: grid;
+                grid-template-columns: auto;
                 background: rgb(0, 0, 0);
                 top: 100%;
                 opacity: 1;

@@ -6,6 +6,7 @@ $dot-space: 20px;
     padding: 0.5rem calc((100vw - 1200px)/2);
     background: linear-gradient(90deg, $bg-color ($dot-space - $dot-size), transparent 1%) center, linear-gradient($bg-color ($dot-space - $dot-size), transparent 1%) center, $dot-color;
     background-size: $dot-space $dot-space;
+    width: 100%;
     &--title {
         font-size: 2.5rem;
         color: #fff;

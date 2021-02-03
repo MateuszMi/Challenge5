@@ -1,6 +1,7 @@
 .contact {
-    padding: 0.5rem calc((100vw - 1200px)/2);
+    padding: 0.5rem calc((100vw - 1000px)/2);
     background-color: #475A85;
+    width: 100%;
     &__title {
         font-size: 2.5rem;
         color: #fff;
@@ -49,15 +50,25 @@
         color: #fff;
         font-size: 1.5rem;
         margin-bottom: 20px;
+        @include tablet {
+            text-align: center;
+        }
     }
     &__item--info {
         color: #fff;
         font-size: 1rem;
+        @include tablet {
+            text-align: center;
+            font-size: 0.8rem;
+        }
     }
     &__items {
         color: #fff;
         font-size: 1.2rem;
         margin: 20px auto 40px auto;
+        @include tablet {
+            font-size: 1rem;
+        }
     }
     &__info {
         &--loc {
@@ -66,6 +77,9 @@
             & i {
                 margin-right: 20px;
                 line-height: 30px;
+                @include tablet {
+                    margin: auto 10px auto 10px;
+                }
             }
         }
         &--phone {
@@ -74,6 +88,9 @@
             & i {
                 margin-right: 20px;
                 line-height: 30px;
+                @include tablet {
+                    margin: auto 10px auto 10px;
+                }
             }
         }
         &--mail {
@@ -82,6 +99,9 @@
             & i {
                 margin-right: 20px;
                 line-height: 30px;
+                @include tablet {
+                    margin: auto 10px auto 10px;
+                }
             }
         }
     }
@@ -95,6 +115,11 @@
         line-height: 30px;
         border-radius: 50%;
     }
+    @include tablet {
+        &__icon {
+            text-align: center;
+        }
+    }
     &__button {
         background-color: rgb(189, 70, 70);
         color: #fff;
@@ -104,6 +129,10 @@
         border-radius: 10px;
         cursor: pointer;
         padding: 15px 45px;
+        @include tablet {
+            display: flex;
+            margin: 20px auto auto auto;
+        }
     }
     &__button:hover {
         background-color: rgb(170, 60, 20);
@@ -114,6 +143,10 @@
 
 .inputwrapper {
     display: inline;
+    @include tablet {
+        display: block;
+        text-align: center;
+    }
     & #name {
         border: none;
         width: 40%;
@@ -121,6 +154,11 @@
         margin: auto 10px 15px auto;
         padding-left: 10px;
         border-radius: 5px;
+        @include tablet {
+            width: 83%;
+            margin-left: 10px;
+            margin-bottom: 10px;
+        }
     }
     & #email {
         width: 40%;
@@ -128,6 +166,10 @@
         line-height: 40px;
         border: none;
         border-radius: 5px;
+        @include tablet {
+            width: 83%;
+            margin-bottom: 10px;
+        }
     }
     & #message {
         border: none;

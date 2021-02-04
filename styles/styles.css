@@ -51,13 +51,13 @@
     display: grid;
     -ms-grid-columns: auto;
         grid-template-columns: auto;
-    background: black;
-    top: 100%;
+    background: #000;
     opacity: 1;
+    position: relative;
+    top: 100%;
     -webkit-transition: opacity 0.3s ease-in;
     transition: opacity 0.3s ease-in;
     z-index: 99;
-    right: 0;
     font-size: 1rem;
     height: 300px;
     width: 150px;
@@ -237,8 +237,15 @@
           justify-content: center;
   padding-left: 10px;
   margin: 50px auto 50px auto;
+  width: 350px;
   border-bottom: 2px solid #fff;
   padding: 15px;
+}
+
+@media screen and (max-width: 768px) {
+  .service__info {
+    width: 220px;
+  }
 }
 
 .service__info--title {
